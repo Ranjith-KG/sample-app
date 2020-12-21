@@ -1,0 +1,85 @@
+.filter-page-container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.filter-page-container .header {
+	display: flex;
+  justify-content: space-between;
+  box-shadow: 0 8px 6px -6px #CCC;
+  color: darkorange;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 10px;
+  width: 100%;
+}
+
+.filter-page-container .footer {
+  
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: darkorange;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+}
+
+.filter-page-container main {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 100%;
+}
+
+.filter-page-container .main-filters {
+  border-right: 1px solid #ccc;
+  overflow-y: scroll;
+  height: calc(100vh - 113px);
+}
+
+.main-filters li {
+  list-style: none;
+  line-height: 40px;
+  padding: 0 15px;
+}
+
+.main-filters li.active {
+  background-color: #F2F2F2;
+}
+
+.sub-filters {
+  overflow-y: scroll;
+  height: calc(100vh - 113px);
+}
+
+.sub-filters li {
+  list-style: none;
+  line-height: 30px;
+  padding: 0 15px;
+}
+
+.sub-filters .filter {
+  float: right;
+  color: darkorange;
+}
+
+.sub-filters .filter.not-selected:before {
+  content: "\2610"
+}
+
+.sub-filters .filter.selected:before {
+  content: "\2611"
+}
