@@ -1,0 +1,35 @@
+.sort-page-container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  background:rgba(0,0,0,0.1);
+}
+
+.sort-page-container .content{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.sort-page-container .content li {
+  list-style: none;
+  line-height: 50px;
+  padding: 0 15px;
+  background-color: #FFF;
+  text-align: center;
+}
+
+.sort-page-container .content button {
+  height: 50px;
+  width: 100%;
+  padding: 0 15px;
+  background-color: #DDD;
+  font-size: 16px;
+  border: none;
+}
